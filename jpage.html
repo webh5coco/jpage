@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jPages.min.js"></script>
+<link rel="stylesheet" href="css/jPages.css">
+<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+
+<!-- Future navigation panel -->
+<!-- <div class="holder"></div> -->
+<!-- Item container (doesn't need to be an UL) -->
+<ul id="itemContainer">
+<!-- Items -->
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+  
+    <li>...</li>
+     <li>...</li>
+
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+   
+    <li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+    <li>...</li>
+
+</ul>
+
+<div class="holder">
+    <a class="jp-previous jp-disabled">← previous</a>
+    <a class="jp-current">1</a>
+    <span class="jp-hidden">...</span>
+    <a>2</a>
+    <a>3</a>
+    <a>4</a>
+    <a>5</a>
+    <a class="jp-hidden">6</a>
+    <a class="jp-hidden">7</a>
+    <a class="jp-hidden">8</a>
+    <a class="jp-hidden">9</a>
+    <span>...</span>
+    <a>10</a>
+    <a class="jp-next">next →</a>
+</div>
+<script>
+    $(function(){
+        var List=$("#itemContainer");
+        for(var i=0;i<100;i++){
+            List.append("<li>"+i+"</li>");
+        }
+  $("div.holder").jPages({
+        containerID : "itemContainer"
+  });
+});
+
+
+</script>
+    
+</body>
+</html>
